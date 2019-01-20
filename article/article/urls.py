@@ -24,6 +24,7 @@ urlpatterns = [
     # Alternatively, if you want Wagtail pages to be served from a subpath
     # of your site, rather than the site root:
     #    url(r'^pages/', include(wagtail_urls)),
+    url(r'^accounts/', include('registration.backends.default.urls')),
 ]
 
 
